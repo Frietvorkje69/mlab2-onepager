@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Beppies</title>
     <link rel="icon" href="src/img/icon.png"/>
+    <script src="https://kit.fontawesome.com/c7b1d33b1c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .hero-image {
@@ -26,7 +27,8 @@
 
     <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
         <div class="flex items-center">
-            <a href="#" class="text-xl font-bold hover:underline">Team Beppies</a> <span class="text-gray-500 ml-4 text-base">Slogan</span>
+            <a href="#" class="text-xl font-bold hover:underline">Team Beppies</a> <span
+                class="text-gray-500 ml-4 text-base">CMGT x CMD x Zorginnovatie</span>
         </div>
 
         <div class="hidden lg:flex space-x-4">
@@ -35,11 +37,12 @@
             <a href="#concepts" class="text-gray-700 hover:text-gray-900">Concepten</a>
             <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
         </div>
-        <button class="lg:hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="menu-toggle">
+        <button class="lg:hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                id="menu-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
-                <path fill-rule="evenodd" d="M15 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
-                <path fill-rule="evenodd" d="M4 8a1 1 0 010-2h12a1 1 0 110 2z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M15 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M4 8a1 1 0 010-2h12a1 1 0 110 2z" clip-rule="evenodd"/>
             </svg>
         </button>
     </nav>
@@ -51,59 +54,90 @@
         <section id="project" class="container mx-auto px-6 py-12">
             <h2 class="text-2xl font-bold mb-4">Het Project</h2>
             <p class="text-lg leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel efficitur ex. Nam vestibulum nulla vel suscipit eleifend. Donec auctor felis vel nibh gravida, non scelerisque nisl feugiat. Phasellus eu vestibulum velit. Proin sit amet nisl nec lectus tincidunt blandit. Integer vel efficitur nulla, eget tincidunt urna. In non felis vel lorem convallis consectetur. Duis non consectetur lorem, nec luctus odio. Aliquam erat volutpat. Donec convallis hendrerit massa at malesuada. Vivamus lobortis velit eget vehicula feugiat. Aenean id erat eget velit suscipit interdum. Pellentesque nec justo in odio malesuada egestas. Vivamus nec augue mi. Nulla eu nisi tortor. In hac habitasse platea dictumst. Phasellus consectetur dictum tortor, sit amet pulvinar velit tincidunt eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel efficitur ex. Nam vestibulum nulla
+                vel suscipit eleifend. Donec auctor felis vel nibh gravida, non scelerisque nisl feugiat. Phasellus eu
+                vestibulum velit. Proin sit amet nisl nec lectus tincidunt blandit. Integer vel efficitur nulla, eget
+                tincidunt urna. In non felis vel lorem convallis consectetur. Duis non consectetur lorem, nec luctus
+                odio. Aliquam erat volutpat. Donec convallis hendrerit massa at malesuada. Vivamus lobortis velit eget
+                vehicula feugiat. Aenean id erat eget velit suscipit interdum. Pellentesque nec justo in odio malesuada
+                egestas. Vivamus nec augue mi. Nulla eu nisi tortor. In hac habitasse platea dictumst. Phasellus
+                consectetur dictum tortor, sit amet pulvinar velit tincidunt eu.
             </p>
             <p class="text-lg leading-loose mt-4">
-                Sed fringilla lorem sit amet ipsum dapibus, vel tincidunt ipsum feugiat. Integer euismod augue non velit iaculis tincidunt. Donec ut justo tristique, accumsan nisi sed, suscipit lacus. Vestibulum in purus sed eros lobortis eleifend a ut mauris. Proin in magna non metus pharetra consectetur id sed odio. Suspendisse potenti. Suspendisse feugiat turpis ut ligula suscipit sodales.
+                Sed fringilla lorem sit amet ipsum dapibus, vel tincidunt ipsum feugiat. Integer euismod augue non velit
+                iaculis tincidunt. Donec ut justo tristique, accumsan nisi sed, suscipit lacus. Vestibulum in purus sed
+                eros lobortis eleifend a ut mauris. Proin in magna non metus pharetra consectetur id sed odio.
+                Suspendisse potenti. Suspendisse feugiat turpis ut ligula suscipit sodales.
             </p>
         </section>
+
+        <hr class="border-gray-300 border-dashed h-2">
 
         <section id="about" class="container mx-auto px-6 py-12">
             <h2 class="text-2xl font-bold mb-4">Wie zijn wij?</h2>
-            <p class="text-lg leading-loose">
-                Describe Team Beppies here. What is your mission? What kind of work do you do?
-                This is a good place to highlight your unique value proposition.
-            </p>
+            <div class="flex">
+                <p class="text-lg leading-loose mr-16"> Sed fringilla lorem sit amet ipsum dapibus, vel tincidunt ipsum
+                    feugiat. Integer euismod augue non velit iaculis tincidunt. Donec ut justo tristique, accumsan nisi
+                    sed, suscipit lacus. Vestibulum in purus sed eros lobortis eleifend a ut mauris. Proin in magna non
+                    metus pharetra consectetur id sed odio. Suspendisse potenti. Suspendisse feugiat turpis ut ligula
+                    suscipit sodales. Sed fringilla lorem sit amet ipsum dapibus, vel tincidunt ipsum feugiat. Integer
+                    euismod augue non velit iaculis tincidunt. Donec ut justo tristique, accumsan nisi sed, suscipit
+                    lacus. Vestibulum in purus sed eros lobortis eleifend a ut mauris. Proin in magna non metus pharetra
+                    consectetur id sed odio. Suspendisse potenti. Suspendisse feugiat turpis ut ligula suscipit sodales.
+                </p>
+                <img src="src/img/team/team.jpg" alt="Team Beppies" class="w-80 h-80 object-cover rounded-md">
+            </div>
         </section>
 
         <section id="team" class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            <a href="https://www.linkedin.com/in/luke-de-groot/" target="_blank" class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
+            <a href="https://www.linkedin.com/in/luke-de-groot/" target="_blank"
+               class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
                 <div class="flex flex-col items-center">
-                    <img src="src/img/team/luke.jpg" alt="Team Member 1" class="rounded-full mb-4 w-32 h-32 object-cover">
+                    <img src="src/img/team/luke.jpg" alt="Team Member 1"
+                         class="rounded-full mb-4 w-32 h-32 object-cover">
                     <h4 class="text-xl font-bold text-center mb-2">Luke de Groot</h4>
                     <p class="text-base text-center">CMGT: Programmeur</p>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/marijn-hokke-a13633214/" target="_blank" class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
+            <a href="https://www.linkedin.com/in/marijn-hokke-a13633214/" target="_blank"
+               class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
                 <div class="flex flex-col items-center">
-                    <img src="src/img/team/marijn.jpg" alt="Team Member 2" class="rounded-full mb-4 w-32 h-32 object-cover">
+                    <img src="src/img/team/marijn.jpg" alt="Team Member 2"
+                         class="rounded-full mb-4 w-32 h-32 object-cover">
                     <h4 class="text-xl font-bold text-center mb-2">Marijn Hokke</h4>
                     <p class="text-base text-center">CMGT: Programmeur</p>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/meta-van-der-eijk-172747187/" target="_blank" class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
+            <a href="https://www.linkedin.com/in/meta-van-der-eijk-172747187/" target="_blank"
+               class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
                 <div class="flex flex-col items-center">
-                    <img src="src/img/team/meta.jpg" alt="Team Member 3" class="rounded-full mb-4 w-32 h-32 object-cover">
+                    <img src="src/img/team/meta.jpg" alt="Team Member 3"
+                         class="rounded-full mb-4 w-32 h-32 object-cover">
                     <h4 class="text-xl font-bold text-center mb-2">Meta van der Eijk</h4>
                     <p class="text-base text-center">CMD: Role</p>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/flolaurenprest/" target="_blank" class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
+            <a href="https://www.linkedin.com/in/flolaurenprest/" target="_blank"
+               class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
                 <div class="flex flex-col items-center">
-                    <img src="src/img/team/flo.jpg" alt="Team Member 4" class="rounded-full mb-4 w-32 h-32 object-cover">
+                    <img src="src/img/team/flo.jpg" alt="Team Member 4"
+                         class="rounded-full mb-4 w-32 h-32 object-cover">
                     <h4 class="text-xl font-bold text-center mb-2">Flo Prest</h4>
                     <p class="text-base text-center">CMD: Role</p>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/fleur-krijnen-b5a65b171/" target="_blank" class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
+            <a href="https://www.linkedin.com/in/fleur-krijnen-b5a65b171/" target="_blank"
+               class="team-member p-4 transition duration-300 ease-in-out transform hover:-translate-y-2 rounded-lg">
                 <div class="flex flex-col items-center">
-                    <img src="src/img/team/fleur.jpg" alt="Team Member 5" class="rounded-full mb-4 w-32 h-32 object-cover">
+                    <img src="src/img/team/fleur.jpg" alt="Team Member 5"
+                         class="rounded-full mb-4 w-32 h-32 object-cover">
                     <h4 class="text-xl font-bold text-center mb-2">Fleur Krijnen</h4>
                     <p class="text-base text-center">CMD: Role</p>
                 </div>
             </a>
         </section>
 
+        <hr class="border-gray-300 border-dashed h-2">
 
         <section id="concepts" class="container mx-auto px-6 py-12 grid grid-cols-1 gap-8">
             <div class="card bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
@@ -120,11 +154,21 @@
             </div>
         </section>
 
+        <hr class="border-gray-300 border-dashed h-2">
+
         <section id="contact" class="container mx-auto px-6 py-12 text-center">
-            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                Neem contact op
-            </a>
+            <h2>Neem contact met ons op:</h2>
+            <div class="flex justify-center mt-4">
+
+                <a href="mailto:1028402@hr.nl" class="text-blue-500 hover:text-blue-700 mr-4">
+                    <i class="far fa-envelope"></i>
+                    Email
+                </a>
+
+            </div>
         </section>
+
+
     </div>
 </div>
 </body>
