@@ -7,17 +7,11 @@
     <link rel="icon" href="src/img/icon.png"/>
     <script src="https://kit.fontawesome.com/c7b1d33b1c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .hero-image {
-            background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-        }
-    </style>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/scripts/app.js"></script>
 </head>
 <body class="bg-gray-100">
-<header>
+<header id="header">
     <div class="hero-image flex items-center justify-center text-white">
         <div class="text-center">
             <h1 class="text-4xl md:text-6xl font-bold">Team Beppies</h1>
@@ -25,20 +19,19 @@
         </div>
     </div>
 
-    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+    <nav class="flex items-center justify-between px-6 py-4 shadow-md bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 text-white" id="navbar">
         <div class="flex items-center">
-            <a href="#" class="text-xl font-bold hover:underline">Team Beppies</a> <span
-                class="text-gray-500 ml-4 text-base">CMGT x CMD x Zorginnovatie</span>
+            <a href="#" class="text-xl font-bold hover:underline">Team Beppies</a>
+            <span class="text-gray-200 ml-4 text-base">CMGT x CMD x Zorginnovatie</span>
         </div>
 
         <div class="hidden lg:flex space-x-4">
-            <a href="#project" class="text-gray-700 hover:text-gray-900">Het project</a>
-            <a href="#about" class="text-gray-700 hover:text-gray-900">Wie zijn wij?</a>
-            <a href="#concepts" class="text-gray-700 hover:text-gray-900">Concepten</a>
-            <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+            <a href="#project" class="text-gray-200 hover:underline">Het project</a>
+            <a href="#about" class="text-gray-200 hover:underline">Wie zijn wij?</a>
+            <a href="#concepts" class="text-gray-200 hover:underline">Concepten</a>
+            <a href="#contact" class="text-gray-200 hover:underline">Contact</a>
         </div>
-        <button class="lg:hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
-                id="menu-toggle">
+        <button class="lg:hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="menu-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M3 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd"/>
                 <path fill-rule="evenodd" d="M15 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd"/>
@@ -52,7 +45,7 @@
     <div class="py-12">
 
         <section id="project" class="container mx-auto px-6 py-12">
-            <h2 class="text-2xl font-bold mb-4">Het Project</h2>
+            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Het Project</h2>
             <p class="text-lg leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel efficitur ex. Nam vestibulum nulla
                 vel suscipit eleifend. Donec auctor felis vel nibh gravida, non scelerisque nisl feugiat. Phasellus eu
@@ -74,7 +67,7 @@
         <hr class="border-gray-300 border-dashed h-2">
 
         <section id="about" class="container mx-auto px-6 py-12">
-            <h2 class="text-2xl font-bold mb-4">Wie zijn wij?</h2>
+            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Wie zijn wij?</h2>
             <div class="flex">
                 <p class="text-lg leading-loose mr-16"> Sed fringilla lorem sit amet ipsum dapibus, vel tincidunt ipsum
                     feugiat. Integer euismod augue non velit iaculis tincidunt. Donec ut justo tristique, accumsan nisi
@@ -95,7 +88,7 @@
                 <div class="flex flex-col items-center">
                     <img src="src/img/team/luke.jpg" alt="Team Member 1"
                          class="rounded-full mb-4 w-32 h-32 object-cover">
-                    <h4 class="text-xl font-bold text-center mb-2">Luke de Groot</h4>
+                    <h4 class="text-xl font-bold text-center mb-2 text-indigo-400">Luke de Groot</h4>
                     <p class="text-base text-center">CMGT: Programmeur</p>
                 </div>
             </a>
@@ -104,7 +97,7 @@
                 <div class="flex flex-col items-center">
                     <img src="src/img/team/marijn.jpg" alt="Team Member 2"
                          class="rounded-full mb-4 w-32 h-32 object-cover">
-                    <h4 class="text-xl font-bold text-center mb-2">Marijn Hokke</h4>
+                    <h4 class="text-xl font-bold text-center mb-2 text-indigo-400">Marijn Hokke</h4>
                     <p class="text-base text-center">CMGT: Programmeur</p>
                 </div>
             </a>
@@ -113,7 +106,7 @@
                 <div class="flex flex-col items-center">
                     <img src="src/img/team/meta.jpg" alt="Team Member 3"
                          class="rounded-full mb-4 w-32 h-32 object-cover">
-                    <h4 class="text-xl font-bold text-center mb-2">Meta van der Eijk</h4>
+                    <h4 class="text-xl font-bold text-center mb-2 text-indigo-400">Meta van der Eijk</h4>
                     <p class="text-base text-center">CMD: Role</p>
                 </div>
             </a>
@@ -122,7 +115,7 @@
                 <div class="flex flex-col items-center">
                     <img src="src/img/team/flo.jpg" alt="Team Member 4"
                          class="rounded-full mb-4 w-32 h-32 object-cover">
-                    <h4 class="text-xl font-bold text-center mb-2">Flo Prest</h4>
+                    <h4 class="text-xl font-bold text-center mb-2 text-indigo-400">Flo Prest</h4>
                     <p class="text-base text-center">CMD: Role</p>
                 </div>
             </a>
@@ -131,7 +124,7 @@
                 <div class="flex flex-col items-center">
                     <img src="src/img/team/fleur.jpg" alt="Team Member 5"
                          class="rounded-full mb-4 w-32 h-32 object-cover">
-                    <h4 class="text-xl font-bold text-center mb-2">Fleur Krijnen</h4>
+                    <h4 class="text-xl font-bold text-center mb-2 text-indigo-400">Fleur Krijnen</h4>
                     <p class="text-base text-center">CMD: Role</p>
                 </div>
             </a>
@@ -140,14 +133,15 @@
         <hr class="border-gray-300 border-dashed h-2">
 
         <section id="concepts" class="container mx-auto px-6 py-12 grid grid-cols-1 gap-8">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Concepten</h2>
             <div class="card bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
-                <h3 class="text-xl font-bold mb-2">Concept 1</h3>
+                <h3 class="text-xl font-bold mb-2 text-indigo-400">Concept 1</h3>
                 <p class="text-base leading-loose">
                     Uitleg
                 </p>
             </div>
             <div class="card bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform hover:scale-105">
-                <h3 class="text-xl font-bold mb-2">Concept 2</h3>
+                <h3 class="text-xl font-bold mb-2 text-indigo-400">Concept 2</h3>
                 <p class="text-base leading-loose">
                     Uitleg
                 </p>
