@@ -14,54 +14,47 @@
 <header id="header">
     <div class="hero-image flex items-center justify-center text-white">
         <div class="text-center">
-            <h1 class="text-4xl md:text-6xl font-bold">Team de Beppies</h1>
-            <p class="text-lg md:text-xl mt-4">CMGT x CMD x Zorginnovatie</p>
+            <h1 id="title" class="text-4xl md:text-6xl font-bold">Team de Beppies</h1>
+            <p id="subtitle" class="text-lg md:text-xl mt-4">CMGT x CMD x Zorginnovatie</p>
         </div>
     </div>
 
     <nav class="flex items-center justify-between px-6 py-4 shadow-md bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 text-white" id="navbar">
         <div class="flex items-center">
-            <a href="#" class="text-xl font-bold hover:underline">Team de Beppies</a>
+            <a class="text-xl font-bold">Team de Beppies</a>
             <span class="text-gray-200 ml-4 text-base">CMGT x CMD x Zorginnovatie</span>
         </div>
 
-        <div class="hidden lg:flex space-x-4">
-            <a href="#project" class="text-gray-200 hover:underline">Het project</a>
-            <a href="#about" class="text-gray-200 hover:underline">Wie zijn wij?</a>
-            <a href="#concepts" class="text-gray-200 hover:underline">Concepten</a>
-            <a href="#contact" class="text-gray-200 hover:underline">Contact</a>
+        <div class="hidden lg:flex space-x-4 relative">
+            <a href="#project" class="nav-link text-gray-200 hover:underline">Het project</a>
+            <a href="#about" class="nav-link text-gray-200 hover:underline">Wie zijn wij?</a>
+            <a href="#concepts" class="nav-link text-gray-200 hover:underline">Concepten</a>
+            <a href="#links" class="nav-link text-gray-200 hover:underline">Links</a>
+            <a href="#contact" class="nav-link text-gray-200 hover:underline">Contact</a>
+            <div class="absolute bottom-0 left-0 h-1 bg-white rounded-full transition-transform transform -translate-x-full group-hover:translate-x-0 group-hover:w-full"></div>
         </div>
-        <button class="lg:hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="menu-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd"/>
-                <path fill-rule="evenodd" d="M15 5a1 1 0 011 1v12a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd"/>
-                <path fill-rule="evenodd" d="M4 8a1 1 0 010-2h12a1 1 0 110 2z" clip-rule="evenodd"/>
-            </svg>
-        </button>
     </nav>
+
 </header>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="py-12">
 
         <section id="project" class="container mx-auto px-6 py-12">
-            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Het Project</h2>
+            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Het project</h2>
             <p class="text-lg leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel efficitur ex. Nam vestibulum nulla
-                vel suscipit eleifend. Donec auctor felis vel nibh gravida, non scelerisque nisl feugiat. Phasellus eu
-                vestibulum velit. Proin sit amet nisl nec lectus tincidunt blandit. Integer vel efficitur nulla, eget
-                tincidunt urna. In non felis vel lorem convallis consectetur. Duis non consectetur lorem, nec luctus
-                odio. Aliquam erat volutpat. Donec convallis hendrerit massa at malesuada. Vivamus lobortis velit eget
-                vehicula feugiat. Aenean id erat eget velit suscipit interdum. Pellentesque nec justo in odio malesuada
-                egestas. Vivamus nec augue mi. Nulla eu nisi tortor. In hac habitasse platea dictumst. Phasellus
-                consectetur dictum tortor, sit amet pulvinar velit tincidunt eu.
+                Samen zijn we, als studenten van de opleidingen Communication & Multimedia Design (CMD) en Creative
+                Media
+                & Game Technologies (CMGT), aan een project begonnen met de centrale vraag: <strong>"Hoe kunnen we
+                ouderen motiveren om verantwoord en zelfstandig meer te bewegen en daarbij sociale interactie te
+                bevorderen?"</strong> Ons project richt zich op het bedenken van een digitale oplossing ter
+                preventie van vallen bij ouderen. We willen specifiek de behoeften en uitdagingen van de doelgroep van
+                65-plussers adresseren.</p>
+            <p class="text-base italic leading-loose mt-4">
+                Op deze website kunt u meer informatie vinden over ons project, de concepten die wij hebben bedacht,
+                deelproducten en het uiteindelijke prototype van het verkozen concept.
             </p>
-            <p class="text-lg leading-loose mt-4">
-                Sed fringilla lorem sit amet ipsum dapibus, vel tincidunt ipsum feugiat. Integer euismod augue non velit
-                iaculis tincidunt. Donec ut justo tristique, accumsan nisi sed, suscipit lacus. Vestibulum in purus sed
-                eros lobortis eleifend a ut mauris. Proin in magna non metus pharetra consectetur id sed odio.
-                Suspendisse potenti. Suspendisse feugiat turpis ut ligula suscipit sodales.
-            </p>
+
         </section>
 
         <hr class="border-gray-300 border-dashed h-2">
@@ -150,13 +143,32 @@
 
         <hr class="border-gray-300 border-dashed h-2">
 
+        <section id="links" class="container mx-auto px-6 py-12">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Links:</h2>
+            <div class="flex justify-center mt-4 space-x-4">
+
+                <a href="https://github.com/Frietvorkje69/mlab2-project" target="_blank"
+                   class="bg-purple-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-700 transition-colors duration-300 text-lg">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
+
+                <a href="https://miro.com/app/board/uXjVKQ5yrv0=/?share_link_id=813875877177" target="_blank"
+                   class="bg-purple-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-700 transition-colors duration-300 text-lg">
+                    <i class="far fa-folder"></i> Miro Board (Onderzoek)
+                </a>
+
+            </div>
+        </section>
+
+        <hr class="border-gray-300 border-dashed h-2">
+
         <section id="contact" class="container mx-auto px-6 py-12 text-center">
-            <h2>Neem contact met ons op:</h2>
+            <h2>Heeft u vragen over dit project?</h2>
             <div class="flex justify-center mt-4">
 
                 <a href="mailto:1028402@hr.nl" class="text-blue-500 hover:text-blue-700 mr-4">
                     <i class="far fa-envelope"></i>
-                    Email
+                    1028402@hr.nl
                 </a>
 
             </div>
@@ -165,5 +177,37 @@
 
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        anime({
+            targets: '#title',
+            translateX: [-100, 0],
+            opacity: [0, 1],
+            easing: 'easeOutExpo',
+            duration: 1500
+        });
+
+        anime({
+            targets: '#subtitle',
+            translateY: [100, 0],
+            opacity: [0, 1],
+            easing: 'easeOutExpo',
+            duration: 1500,
+            delay: 500
+        });
+    });
+</script>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 </body>
 </html>
