@@ -6,9 +6,31 @@
     <title>Team de Beppies</title>
     <link rel="icon" href="src/img/icon.png"/>
     <script src="https://kit.fontawesome.com/c7b1d33b1c.js" crossorigin="anonymous"></script>
+    <script src="src/scripts/app.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
-    <script src="src/scripts/app.js"></script>
+    <style>
+        /*.nav-link {*/
+        /*    position: relative;*/
+        /*    text-decoration: none;*/
+        /*    transition: color 0.3s ease-in-out;*/
+        /*}*/
+
+        /*.nav-link::after {*/
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    bottom: -2px;*/
+        /*    left: 0;*/
+        /*    width: 0;*/
+        /*    height: 2px;*/
+        /*    background-color: rgba(229,231,235);*/
+        /*    transition: width 0.3s ease-in-out;*/
+        /*}*/
+
+        /*.nav-link:hover::after {*/
+        /*    width: 100%;*/
+        /*}*/
+    </style>
 </head>
 <body class="bg-gray-100">
 <header id="header">
@@ -27,11 +49,11 @@
         </div>
 
         <div class="hidden lg:flex space-x-4 relative">
-            <a href="#project" class="nav-link text-gray-200 hover:underline">Het project</a>
-            <a href="#about" class="nav-link text-gray-200 hover:underline">Wie zijn wij?</a>
-            <a href="#concepts" class="nav-link text-gray-200 hover:underline">Concepten</a>
-            <a href="#links" class="nav-link text-gray-200 hover:underline">Links</a>
-            <a href="#contact" class="nav-link text-gray-200 hover:underline">Contact</a>
+            <a href="#project" class="nav-link text-gray-200">Het project</a>
+            <a href="#about" class="nav-link text-gray-200">Wie zijn wij?</a>
+            <a href="#concepts" class="nav-link text-gray-200">Concepten</a>
+            <a href="#links" class="nav-link text-gray-200">Links</a>
+            <a href="#contact" class="nav-link text-gray-200">Contact</a>
             <div class="absolute bottom-0 left-0 h-1 bg-white rounded-full transition-transform transform -translate-x-full group-hover:translate-x-0 group-hover:w-full"></div>
         </div>
     </nav>
